@@ -4,7 +4,7 @@
 \alias{theme_vf}
 \title{Theme for 24-2 visual fields plots}
 \usage{
-theme_vf(...)
+theme_vf(base_family = "Helvetica", base_size = 14)
 }
 \description{
 Theme for 24-2 visual fields plots

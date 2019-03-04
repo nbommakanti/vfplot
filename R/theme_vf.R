@@ -6,18 +6,33 @@
 #'
 #' @examples
 #' p + theme_vf()
-theme_vf <- function (...) {
-    theme_classic(base_family = "Roboto", base_size = 14) +
+theme_vf <- function (base_family = "Helvetica", base_size = 14) {
+    theme_classic(
+        base_family = base_family,
+        base_size = base_size
+    ) %+replace%
         theme(
-            plot.title = element_text(size = 18, face = "bold"),
-            plot.subtitle = element_text(size = 12),
+            # Large title and smaller subtitle
+            plot.title = element_text(size = 18, face = "bold", hjust = 0),
+            plot.subtitle = element_text(size = 12, hjust = 0),
+
+
+            # Hide y axis line and ticks
             axis.line.y = element_blank(),
             axis.ticks.y = element_blank(),
-            panel.grid.major.y = element_line(size = 0.1, linetype = 3),
+
+            # Add dashed y-axis line
+            panel.grid.major.y = element_line(size = 0.3,
+                                              linetype = 3,
+                                              color = colorscale_columbia["lightgray"]),
+
+            # Outline facetted plots
             panel.border = element_rect(linetype = "solid",
                                         fill = NA,
                                         color = colorscale_columbia[8]),
+
+            # Remove facet labels
             strip.background = element_blank(),
-            strip.text.x = element_blank(),
-            ...)
+            strip.text.x = element_blank())
 }
+
