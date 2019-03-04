@@ -4,7 +4,7 @@
 \alias{theme_vf}
 \title{Theme for 24-2 visual fields plots}
 \usage{
-theme_vf()
+theme_vf(...)
 }
 \description{
 Theme for 24-2 visual fields plots

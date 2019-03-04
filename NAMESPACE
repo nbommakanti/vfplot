@@ -2,6 +2,6 @@
 
 export(add_vf_locations)
 export(strip_empty)
-export(theme_heatmap)
+export(theme_clean)
 export(theme_vf)
 import(ggplot2)
