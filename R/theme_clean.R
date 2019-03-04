@@ -7,10 +7,14 @@
 #'
 #' @examples
 #' p + theme_clean()
-theme_clean <- function (base_family = "Helvetica", base_size = 14) {
+theme_clean <- function (base_family = "Helvetica", base_size = 14,
+                         base_line_size = base_size / 22,
+                         base_rect_size = base_size / 22) {
     theme_classic(
         base_family = base_family,
-        base_size = base_size
+        base_size = base_size,
+        base_line_size = base_line_size,
+        base_rect_size = base_rect_size
     ) %+replace%
         theme(
             # Large title and smaller subtitle
