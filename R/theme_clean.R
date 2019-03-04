@@ -14,15 +14,15 @@ theme_clean <- function (base_family = "Helvetica", base_size = 14) {
     ) %+replace%
         theme(
             # Large title and smaller subtitle
-            plot.title = element_text(size = 18, face = "bold"),
-            plot.subtitle = element_text(size = 12),
+            plot.title = element_text(size = 18, face = "bold", hjust = 0),
+            plot.subtitle = element_text(size = 12, hjust = 0),
 
             # Hide y axis line and ticks
             axis.line.y = element_blank(),
             axis.ticks.y = element_blank(),
 
             # Add dashed y-axis line
-            panel.grid.major.y = element_line(size = 0.2,
+            panel.grid.major.y = element_line(size = 0.3,
                                               linetype = 3,
                                               color = colorscale_columbia["lightgray"]))
 }

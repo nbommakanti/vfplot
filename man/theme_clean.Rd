@@ -5,7 +5,7 @@
 \title{Theme for clean plots
 Use for 24-2 heatmaps, histograms, etc.}
 \usage{
-theme_clean(...)
+theme_clean(base_family = "Helvetica", base_size = 14)
 }
 \description{
 Theme for clean plots
