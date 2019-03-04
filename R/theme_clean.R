@@ -10,6 +10,10 @@
 theme_clean <- function (base_family = "Helvetica", base_size = 14,
                          base_line_size = base_size / 22,
                          base_rect_size = base_size / 22) {
+
+    # Define half line for margins used below
+    half_line <- base_size / 2
+
     theme_classic(
         base_family = base_family,
         base_size = base_size,
@@ -18,8 +22,13 @@ theme_clean <- function (base_family = "Helvetica", base_size = 14,
     ) %+replace%
         theme(
             # Large title and smaller subtitle
-            plot.title = element_text(size = 18, face = "bold", hjust = 0),
-            plot.subtitle = element_text(size = 12, hjust = 0),
+            plot.title = element_text(size = 18,
+                                      face = "bold",
+                                      hjust = 0,
+                                      margin = margin(b = half_line)),
+            plot.subtitle = element_text(size = 12,
+                                         hjust = 0,
+                                         margin = margin(b = half_line)),
 
             # Hide y axis line and ticks
             axis.line.y = element_blank(),
