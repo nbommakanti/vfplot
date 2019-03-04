@@ -6,7 +6,7 @@
 #'
 #' @examples
 #' p + theme_vf()
-theme_vf <- function () {
+theme_vf <- function (...) {
     theme_classic(base_family = "Roboto", base_size = 14) +
         theme(
             plot.title = element_text(size = 18, face = "bold"),
@@ -18,5 +18,6 @@ theme_vf <- function () {
                                         fill = NA,
                                         color = colorscale_columbia[8]),
             strip.background = element_blank(),
-            strip.text.x = element_blank())
+            strip.text.x = element_blank(),
+            ...)
 }
