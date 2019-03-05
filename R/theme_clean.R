@@ -9,7 +9,8 @@
 #' p + theme_clean()
 theme_clean <- function (base_family = "Helvetica", base_size = 14,
                          base_line_size = base_size / 22,
-                         base_rect_size = base_size / 22) {
+                         base_rect_size = base_size / 22,
+                         ...) {
 
     # Define half line for margins used below
     half_line <- base_size / 2
@@ -37,7 +38,11 @@ theme_clean <- function (base_family = "Helvetica", base_size = 14,
             # Add dashed y-axis line
             panel.grid.major.y = element_line(size = 0.3,
                                               linetype = 3,
-                                              color = colorscale_columbia["lightgray"]))
+                                              color = colorscale_columbia["lightgray"]),
+
+            # Allow for other parameters to be passed
+            ...
+        )
 }
 
 

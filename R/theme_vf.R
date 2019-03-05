@@ -8,7 +8,8 @@
 #' p + theme_vf()
 theme_vf <- function (base_family = "Helvetica", base_size = 14,
                       base_line_size = base_size / 22,
-                      base_rect_size = base_size / 22) {
+                      base_rect_size = base_size / 22,
+                      ...) {
 
     # Define half line for margins used below
     half_line <- base_size / 2
@@ -46,6 +47,10 @@ theme_vf <- function (base_family = "Helvetica", base_size = 14,
 
             # Remove facet labels
             strip.background = element_blank(),
-            strip.text.x = element_blank())
+            strip.text.x = element_blank(),
+
+            # Allow for other parameters to be passed
+            ...
+        )
 }
 
