@@ -4,7 +4,7 @@
 \alias{strip_empty}
 \title{Strip intentionally-placed empty grobs from facet plot}
 \usage{
-strip_empty(p)
+strip_empty(p, type = "24-2")
 }
 \arguments{
 \item{p}{}

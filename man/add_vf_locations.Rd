@@ -4,7 +4,7 @@
 \alias{add_vf_locations}
 \title{Add VF Locations}
 \usage{
-add_vf_locations(data)
+add_vf_locations(data, type = "24-2")
 }
 \arguments{
 \item{data}{}
