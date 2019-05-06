@@ -26,7 +26,7 @@ theme_vf <- function (base_family = "Helvetica", base_size = 14,
                                       face = "bold",
                                       hjust = 0,
                                       margin = margin(b = half_line)),
-            plot.subtitle = element_text(size = 12,
+            plot.subtitle = element_text(size = 14,
                                          hjust = 0,
                                          margin = margin(b = half_line)),
 
@@ -36,7 +36,7 @@ theme_vf <- function (base_family = "Helvetica", base_size = 14,
             axis.ticks.y = element_blank(),
 
             # Add dashed y-axis line
-            panel.grid.major.y = element_line(size = 0.3,
+            panel.grid.major.y = element_line(size = 0.2,
                                               linetype = 3,
                                               color = colorscale_columbia["lightgray"]),
 
