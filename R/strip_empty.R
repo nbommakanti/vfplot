@@ -47,6 +47,8 @@ strip_empty <- function(p, type = "24-2") {
                        "panel-1-8", "panel-1-9", "panel-1-10",
                        "panel-2-1", "panel-2-2", "panel-2-9", "panel-2-10",
                        "panel-3-1", "panel-3-10",
+                       "panel-5-8",
+                       "panel-6-8",
                        "panel-8-1", "panel-8-10",
                        "panel-9-1", "panel-9-2", "panel-9-9", "panel-9-10",
                        "panel-10-1", "panel-10-2", "panel-10-3",

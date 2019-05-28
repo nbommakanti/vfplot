@@ -27,7 +27,7 @@ theme_clean <- function (base_family = "Helvetica", base_size = 14,
                                       face = "bold",
                                       hjust = 0,
                                       margin = margin(b = half_line)),
-            plot.subtitle = element_text(size = 14,
+            plot.subtitle = element_text(size = 12,
                                          hjust = 0,
                                          margin = margin(b = half_line)),
 
